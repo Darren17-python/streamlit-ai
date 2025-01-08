@@ -4,7 +4,7 @@ import joblib
 
 def load_model():
     try:
-        model = joblib.load(r'C:\Users\Darren Eduardo\Desktop\Documents\Progres Projeck_AI_Kelompok 2\best_xgb_model.pkl')
+        model = joblib.load('best_xgb_model.pkl')
         return model
     except Exception as e:
         st.error(f"Error saat memuat model: {e}")
